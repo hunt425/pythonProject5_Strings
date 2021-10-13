@@ -110,7 +110,7 @@ def verify_check_digit(student_id):
                                                                               get_check_digit(student_id))
             return -1
         else:
-            return 'Liberty Card is a valid card'
+            return 'Library Card is a valid card'
             break
 
         # library card is valid
@@ -150,7 +150,7 @@ while play_again != 'q' and play_again != 'Q':
     student_id = input('Enter Library Card:\n')
     print(student_id)
     print(verify_check_digit(student_id))
-    if verify_check_digit(student_id) == 'Liberty Card is a valid card':
+    if verify_check_digit(student_id) == 'Library Card is a valid card':
         print('This card belongs to a student in {}'.format(get_school(student_id)))
         print('This card belongs to a {}'.format(get_grade(student_id)))
         play_again = input('Would you like to play again? Press q to quit\n')
